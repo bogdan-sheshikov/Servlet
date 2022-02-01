@@ -21,18 +21,16 @@ public class image extends HttpServlet {
         String category = request.getParameter("select");
 
         // Генерация случайного числа для вывода случайной картинки из каталога
-        int num = new Random().nextInt(11);
+        int num = new Random().nextInt(10) + 1;
 
-        HttpSession session = request.getSession();
-        String url = session.getServletContext().getRealPath("/") + "images";
-
+        out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<link rel=\"stylesheet\" href=\"<c:url value='${pageContext.request.contextPath}/css/img.css'/>\" />");
+        out.println("<link rel=\"stylesheet\" href=\"/css/img.css\" type=\"text/css\" />");
         out.println("</head>");
         out.println("<body>");
 
-        out.println(String.format("<img src=\"" + url + "/" + category + "/%d.jpg\"/>", num));
+        out.println(String.format("<img src=\"images/" + category + "/%d.jpg\"/>", num));
 
         out.println("</body></html>");
     }
