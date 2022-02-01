@@ -1,0 +1,38 @@
+form{
+    text-align: center;
+    margin: 0 auto;
+    width: 420px;
+    height: 530px;
+    background-color: rgba(15, 93, 161, 0.83);
+    border: 3px solid #d76d00;
+    border-radius: 20px;
+}
+select{
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(80, 10, 206, 0);
+    color: #d76d00;
+    border: none;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+}
+option {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+input{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #d76d00;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
